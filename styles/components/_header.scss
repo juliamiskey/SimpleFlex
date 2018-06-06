@@ -1,0 +1,155 @@
+.main-header {
+    @include splitGradient($white, darken($white, 2));
+    .wrapper {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.nav__list__item__link {
+    position: relative;
+    @include fancyLinkUnderline($light-black);
+}
+
+.nav {
+    &--main {
+        .nav__list {
+            @include unstyledList;
+            @include flexRowWrap;
+            &__item {
+                &:not(:last-of-type) {
+                    border-right: 1px solid #e8e8e8;
+                }
+                &__link {
+                    color: $heading-text-color-dark;
+                    display: inline-block;
+                    font-size: 1.3rem;
+                    margin: 0 35px;
+                    position: relative;
+                    &--active {
+                        color: $red;
+                        &::after {
+                            background-color: $red;
+                        }
+                    }
+                }
+                &:last-of-type a {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &--mobile {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: $light-black;
+        bottom: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+        font-size: 3.5rem;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        right: -300px;
+        top: 0;
+        width: 300px;
+        -webkit-transition: right 0.3s ease;
+        -o-transition: right 0.3s ease;
+        transition: right 0.3s ease;
+        z-index: 20;
+        .nav__list {
+            &__item {
+                &__link {
+                    color: $white;
+                    display: inline-block;
+                    padding: 15px;
+                    text-decoration: none;
+                    &:hover {
+                        color: $primary-text-color;
+                    }
+                }
+            }
+        }
+    }
+    &__toggle {
+        display: none;
+        &:checked+.nav--mobile {
+            right: 0;
+        }
+        &:checked~.wrapper {
+            left: -300px;
+        }
+        &__label {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            border: 2px solid $light-black;
+            color: $light-black;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            left: 20px;
+            font-size: 1rem;
+            font-weight: $font-weight-bold;
+            padding: 5px 10px;
+            text-transform: uppercase;
+            &__text {
+                display: inline-block;
+                font-size: 1.5rem;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+/* hamburglar menu styles adapted from in-class lesson */
+
+@media screen and (max-width: 699px) {
+    .nav--main {
+        display: none;
+    }
+    .main-header__logo {
+        margin: 0 auto;
+        padding: 0 10px;
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .nav__toggle__label {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 850px) {
+    .main-header {
+        .wrapper {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+        &__logo {
+            margin-bottom: 20px;
+        }
+    }
+}

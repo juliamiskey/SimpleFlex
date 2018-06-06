@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+
+    <!-- METATAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simpleflex | Home</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- FONT AWESOME -->
+    <script defer src='https://use.fontawesome.com/releases/v5.0.10/js/all.js' integrity='sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+'
+        crossorigin='anonymous'></script>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Raleway:300,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <input type="checkbox" id="toggle" name="toggle" class="nav__toggle">
+    <ul class="nav--mobile nav nav__list">
+        <li class="nav__list__item">
+            <a href="#" class="nav__list__item__link">Home</a>
+        </li>
+        <li class="nav__list__item">
+            <a class="nav__list__item__link" href="#about">About</a>
+        </li>
+        <li class="nav__list__item">
+            <a class="nav__list__item__link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav__list__item">
+            <a class="nav__list__item__link" href="#blog">Blog</a>
+        </li>
+        <li class="nav__list__item">
+            <a class="nav__list__item__link" href="#contact">Contact</a>
+        </li>
+    </ul>
+
+    <header class="main-header">
+        <div class="wrapper">
+            <label for="toggle" class="nav__toggle__label">
+                Menu
+            </label>
+            <div class="main-header__logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="Simpleflex">
+                </a>
+            </div>
+            <nav class="nav nav--main">
+                <ul class="nav__list">
+                    <li class="nav__list__item">
+                        <a href="#" class="nav__list__item__link nav__list__item__link--active">Home</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a class="nav__list__item__link" href="#about">About</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a class="nav__list__item__link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a class="nav__list__item__link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a class="nav__list__item__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="main-content" id="mainContent">
+        <section id="hero" class="section hero row row--outer row--highlight row--highlight--secondary">
+            <div class="wrapper">
+                <div class="hero__text">
+                    <h1 class="heading heading--primary hero__text__heading">
+                        <span class="hero__text__heading__highlight">Everything</span> you need
+                    </h1>
+                    <p class="paragraph--lead paragraph--lead--hero">
+                        Simpleflex is best solution for you, so you can present your business and services properly.
+                    </p>
+                    <a href="#" class="button button--primary button--primary--contrast">Purchase this theme</a>
+                </div>
+                <div class="hero__img-container">
+                    <img src="images/mockup-1.png" alt="Our product" class="hero__img-container__img row--hero__img-container__img">
+                </div>
+            </div>
+            <div class="controls controls--hero controls--inline">
+                <ul class="controls__list">
+                    <li class="controls__list__item">
+                        <button class="controls__list__item__link controls__list__item__link--active" aria-label="Current slide">
+                            <i class="far fa-circle"></i>
+                        </button>
+                    </li>
+                    <li class="controls__list__item">
+                        <button class="controls__list__item__link" aria-label="Slide 2">
+                            <i class="far fa-circle"></i>
+                        </button>
+                    </li>
+                    <li class="controls__list__item">
+                        <button class="controls__list__item__link" aria-label="Slide 3">
+                            <i class="far fa-circle"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="about row row--outer row--light row--about section--subsection">
+                <div class="wrapper">
+                    <h2 class="heading heading--primary">About Us</h2>
+                    <p class="paragraph--lead">Sanctus sea sed takimata ut vero voluptua. Stet clita kasd gubergren, no sea takimata sanctus est.</p>
+                    <ul class="card-list card-list--features row--inner row--inner--4-up">
+                        <li class="card-list__item card-list__item--secondary card-list__item--light card-list__item--inset">
+                            <img src="images/icon-modern.png" alt="" class="card-list__item__icon">
+                            <h3 class="heading heading--secondary">Modern</h3>
+                            <p class="paragraph paragraph--loose card-list__item__paragraph">
+                                Seiam nonumy eirmod tempor invidunt ut labore et dolore magna.
+                            </p>
+                        </li>
+                        <li class="card-list__item card-list__item--tertiary card-list__item--light card-list__item--inset">
+                            <img src="images/icon-simple.png" alt="" class="card-list__item__icon">
+                            <h3 class="heading heading--secondary">Simple</h3>
+                            <p class="paragraph paragraph--loose card-list__item__paragraph">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam.
+                            </p>
+                        </li>
+                        <li class="card-list__item card-list__item--primary card-list__item--light card-list__item--inset">
+                            <img src="images/icon-flexible.png" alt="" class="card-list__item__icon">
+                            <h3 class="heading heading--secondary">Flexible</h3>
+                            <p class="paragraph paragraph--loose">
+                                Quis aute iure reprehenderit voluptate velit esse cillum dolore.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills row row--outer row--dark row--skills section--subsection">
+                <div class="wrapper">
+                    <h3 class="heading heading--primary">Our Skills</h3>
+                    <p class="paragraph--lead">AIR is focusing on Web Design / WP Development / HTML&nbsp;Integration
+                    </p>
+                    <ul class="skills-list row--inner row--inner--4-up">
+                        <li class="skills-list__item">
+                            <img src="images/circle-1.png" alt="75" class="skills-list__item__skill-rating">
+                            <h3 class="heading heading--secondary">Web Design</h3>
+                            <p class="paragraph paragraph--loose">
+                                Excepteur sint obcaecat cupiditat non proident sunt in culpa</p>
+                        </li>
+                        <li class="skills-list__item">
+                            <img src="images/circle-2.png" alt="62" class="skills-list__item__skill-rating">
+                            <h3 class="heading heading--secondary">WordPress</h3>
+                            <p class="paragraph paragraph--loose">
+                                Qui officia deserunt mollit anim id est laborum wisi enim ad</p>
+                        </li>
+                        <li class="skills-list__item">
+                            <img src="images/circle-3.png" alt="57" class="skills-list__item__skill-rating">
+                            <h3 class="heading heading--secondary">jQuery</h3>
+                            <p class="paragraph paragraph--loose">
+                                Minim veniam, quis nostrud exerci tation ullamcorper suscipit</p>
+                        </li>
+                        <li class="skills-list__item">
+                            <img src="images/circle-4.png" alt="87" class="skills-list__item__skill-rating">
+                            <h3 class="heading heading--secondary">HTML / CSS</h3>
+                            <p class="paragraph paragraph--loose">
+                                Fobortis nisl ut aliquip commodo consequat
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ASIDE -->
+            <aside class="aside blockquote row row--outer row--highlight row--highlight--tertiary">
+                <div class="wrapper">
+                    <blockquote class="aside__pullquote">
+                        <p class="aside__pullquote__body">Design to express, not to impress.</p>
+                        <cite class="aside__pullquote__cite">John Tanedo</cite>
+                    </blockquote>
+                </div>
+            </aside>
+
+            <!-- LATEST PROJECTS -->
+            <div class="projects row row--outer row--light row--outer--bottom-bleed section--subsection">
+                <div class="wrapper">
+                    <h3 class="heading heading--primary">Latest Projects</h3>
+                    <p class="paragraph--lead">Sanctus sea sed takimata ut vero voluptua. Stet clita kasd gubergren, no sea takimata sanctus est.
+                    </p>
+                    <!-- SLIDER -->
+                    <div class="slider">
+                        <button class="slider__controls slider__controls--left" aria-label="Previous slide">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="slider__slide">
+                            <img src="images/mockup-2.png" alt="SuccessPlus home screen">
+                        </div>
+                        <!-- / slide -->
+                        <button class="slider__controls slider__controls--right" aria-label="Next slide">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <!-- MEET THE TEAM SECTION -->
+            <div class="team row row--outer row--dark section--subsection">
+                <div class="wrapper">
+                    <h3 class="heading heading--primary">Meet the Team</h3>
+                    <p class="paragraph--lead">A proud group of individuals who came together in a perfect unity to present you with this
+                    </p>
+                    <ul class="card-list card-list--team">
+                        <li class="card-list__item card-list__item--tertiary">
+                            <img src="images/headshot-1.png" alt="Dean Paton" class="card-list__item__profile-pic">
+                            <ul class="social-links-list">
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--facebook">
+                                        <i class="fab fa-facebook-f fa-fw" title="Dean Paton on Facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--twitter">
+                                        <i class="fab fa-twitter fa-fw" title="Dean Paton on Twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--pinterest">
+                                        <i class="fab fa-pinterest-p fa-fw" title="Dean Paton on Pinterest"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="card-list__item card-list__item--tertiary">
+                            <img src="images/headshot-2.png" alt="Britta Perry" class="card-list__item__profile-pic">
+                            <ul class="social-links-list">
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--facebook">
+                                        <i class="fab fa-facebook-f fa-fw" title="Britta Perry on Facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--dribbble">
+                                        <i class="fab fa-dribbble fa-fw" title="Britta Perry on Dribbble"></i>
+                                    </a>
+                                </li>
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--pinterest">
+                                        <i class="fab fa-pinterest-p fa-fw" title="Britta Perry on Pinterest"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="card-list__item card-list__item--tertiary">
+                            <img src="images/headshot-3.png" alt="Jeff Smith" class="card-list__item__profile-pic">
+                            <ul class="social-links-list">
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--facebook">
+                                        <i class="fab fa-facebook-f fa-fw" title="Jeff Smith on Facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--twitter">
+                                        <i class="fab fa-twitter fa-fw" title="Jeff Smith on Twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--flickr">
+                                        <i class="fab fa-flickr fa-fw" title="Jeff Smith on Flickr"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="card-list__item card-list__item--tertiary">
+                            <img src="images/headshot-4.png" alt="Shirley Temple" class="card-list__item__profile-pic">
+                            <ul class="social-links-list">
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--facebook">
+                                        <i class="fab fa-facebook-f fa-fw" title="Shirley Temple on Facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--google">
+                                        <i class="fab fa-google-plus-g fa-fw" title="Shirley Temple on Google Plus"></i>
+                                    </a>
+                                </li>
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--linked-in">
+                                        <i class="fab fa-linkedin-in fa-fw" title="Shirley Temple on LinkedIn"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stats row row--outer row--highlight row--highlight--primary section--subsection">
+                <div class="wrapper">
+                    <ul class="stats-list row--inner">
+                        <li class="stats-list__item">
+                            <img src="images/icon-1.png" alt="" class="stats-list__item__icon">
+                            <span class="stats-list__item__stat">2500</span>
+                            <a href="#" class="button button--primary button--primary--contrast">
+                                Happy clients</a>
+                        </li>
+                        <li class="stats-list__item">
+                            <img src="images/icon-2.png" alt="" class="stats-list__item__icon">
+                            <span class="stats-list__item__stat">650</span>
+                            <a href="#" class="button button--primary button--primary--contrast">
+                                Projects made</a>
+                        </li>
+                        <li class="stats-list__item">
+                            <img src="images/icon-3.png" alt="" class="stats-list__item__icon">
+                            <span class="stats-list__item__stat">5780</span>
+                            <a href="#" class="button button--primary button--primary--contrast">
+                                Letters sent</a>
+                        </li>
+                        <li class="stats-list__item">
+                            <img src="images/icon-4.png" alt="" class="stats-list__item__icon">
+                            <span class="stats-list__item__stat">3400</span>
+                            <a href="#" class="button button--primary button--primary--contrast">
+                                Briefs wrote</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="portfolio" class="section portfolio row row--outer row--light">
+            <div class="wrapper">
+                <h2 class="heading heading--primary">Our Portfolio</h2>
+                <p class="paragraph--lead">Sanctus sea sed takimata ut vero voluptua. Stet clita kasd gubergren, no sea takimata sanctus est.
+                </p>
+            </div>
+            <div class="gallery">
+                <ul class="gallery__nav-list">
+                    <li class="gallery__nav-list__item">
+                        <a href="#" class="gallery__nav-list__item__link gallery__nav-list__item__link--active">
+                            All
+                        </a>
+                    </li>
+                    <li class="gallery__nav-list__item">
+                        <a href="#" class="gallery__nav-list__item__link">
+                            Videos
+                        </a>
+                    </li>
+                    <li class="gallery__nav-list__item">
+                        <a href="#" class="gallery__nav-list__item__link">
+                            Illustrations
+                        </a>
+                    </li>
+                    <li class="gallery__nav-list__item">
+                        <a href="#" class="gallery__nav-list__item__link">
+                            Print
+                        </a>
+                    </li>
+                    <li class="gallery__nav-list__item">
+                        <a href="#" class="gallery__nav-list__item__link">
+                            Misc
+                        </a>
+                    </li>
+                </ul>
+                <ul class="gallery__image-list">
+                    <li class="gallery__image-list__item">
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--img">
+                            <img src="images/portfolio-1.png" alt="Artistic workspace with a notebook, candle, and plant">
+                        </a>
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--headline">
+                            Kopazito
+                        </a>
+                    </li>
+                    <li class="gallery__image-list__item">
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--img">
+                            <img src="images/portfolio-2.png" alt="Laptop computer screen showing drawing of a denim jacket">
+                        </a>
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--headline">
+                            I love Picles
+                        </a>
+                    </li>
+                    <li class="gallery__image-list__item">
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--img">
+                            <img src="images/portfolio-3.png" alt="Collage of figure drawings on an abstract background">
+                        </a>
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--headline">
+                            Shotmen
+                        </a>
+                    </li>
+                    <li class="gallery__image-list__item">
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--img">
+                            <img src="images/portfolio-4.png" alt="Closeup of a hand using a stylus to draw on a tablet computer">
+                        </a>
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--headline">
+                            Voodoo
+                        </a>
+                    </li>
+                    <li class="gallery__image-list__item">
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--img">
+                            <img src="images/portfolio-5.png" alt="Coloured pencil crayons placed on a sketchbook">
+                        </a>
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--headline">
+                            Barbapapa
+                        </a>
+                    </li>
+                    <li class="gallery__image-list__item">
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--img">
+                            <img src="images/portfolio-6.png" alt="Colourful graffiti mural of a japanese person in traditional attire">
+                        </a>
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--headline">
+                            Ron Weasley
+                        </a>
+                    </li>
+                    <li class="gallery__image-list__item">
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--img">
+                            <img src="images/portfolio-7.png" alt="Closeup of a hand using a stylus on a tablet computer">
+                        </a>
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--headline">
+                            My Diamond Returns !
+                        </a>
+                    </li>
+                    <li class="gallery__image-list__item">
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--img">
+                            <img src="images/portfolio-8.png" alt="An assortment of line-art drawings on stickers">
+                        </a>
+                        <a href="#" class="gallery__image-list__item__link gallery__image-list__item__link--headline">
+                            I Can Pay My Bills
+                        </a>
+                    </li>
+                </ul>
+                <button class="button button--primary button--wide button--centered">Load more</button>
+            </div>
+        </section>
+
+        <!-- BLOG SECTION -->
+        <section id="blog" class="section blog row row--outer row--dark">
+            <div class="wrapper">
+                <h2 class="heading heading--primary">Our Blog</h2>
+                <p class="paragraph--lead">Latest from our blog, nam liber tempor cum soluta nobis eleifend option congue nihil.
+                </p>
+                <ul class="blog-list">
+                    <li class="blog-list__post blog-list__post--tall blog-list__post--secondary">
+                        <a href="#" class="blog-list__post__link--img blog-list__post--tall__link--img">
+                            <img src="images/blog-1.png" alt="Open sketchbook full of black and white illustrations">
+                        </a>
+                        <div class="blog-list__post__text blog-list__post--tall__text">
+                            <h3 class="heading heading--secondary">
+                                <a href="#">
+                                    Post With Image
+                                </a>
+                                </h3>
+                            <p class="blog-list__post__text__paragraph blog-list__post__text__paragraph--date">
+                                Dec 29, 2017
+                            </p>
+                            <p class="blog-list__post__text__paragraph">At vero eos et accusam et justo duo dolores et ea rebum quis aute iure reprehenderit in voluptate
+                                velit esse cillum.</p>
+                            <ul class="social-links-list">
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--facebook">
+                                        <i class="fab fa-facebook-f fa-fw" title="Follow us on Facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--twitter">
+                                        <i class="fab fa-twitter fa-fw" title="Follow us on Twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--google">
+                                        <i class="fab fa-google-plus-g fa-fw" title="Follow us on Google Plus"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="blog-list__post blog-list__post--wide blog-list__post--tertiary">
+                        <a href="#" class="blog-list__post__link--img blog-list__post--wide__link--img">
+                            <img src="images/blog-2.png" alt="Wooden hand reaching out">
+                            <div class="controls">
+                                <button class="button--play">
+                                    <i class="fas fa-chevron-right fa-fw" title="Play"></i>
+                                </button>
+                            </div>
+                        </a>
+                        <div class="blog-list__post__text blog-list__post--wide__text">
+                            <h3 class="heading heading--secondary">
+                                <a href="#">
+                                    Post With Video
+                                </a>
+                            </h3>
+                            <p class="blog-list__post__text__paragraph blog-list__post__text__paragraph--date">
+                                Dec 29, 2017
+                            </p>
+                            <p class="blog-list__post__text__paragraph">At vero eos et accusam et justo duo dolores et ea rebum quis aute iure.</p>
+                            <ul class="social-links-list">
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--facebook">
+                                        <i class="fab fa-facebook-f fa-fw" title="Follow us on Facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--twitter">
+                                        <i class="fab fa-twitter fa-fw" title="Follow us on Twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--google">
+                                        <i class="fab fa-google-plus-g fa-fw" title="Follow us on Google Plus"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="blog-list__post blog-list__post--wide blog-list__post--primary">
+                        <a href="#" class="blog-list__post__link--img blog-list__post--wide__link--img">
+                            <img src="images/blog-3.png" alt="Hand drawing with a stylus on a tablet computer">
+                            <div class="controls controls--inline controls--align-bottom">
+                                <ul class="controls__list">
+                                    <li class="controls__list__item">
+                                        <button class="controls__list__item__link controls__list__item__link--active" aria-label="Current slide">
+                                            <i class="far fa-circle"></i>
+                                        </button>
+                                    </li>
+                                    <li class="controls__list__item">
+                                        <button class="controls__list__item__link" aria-label="Slide 2">
+                                            <i class="far fa-circle"></i>
+                                        </button>
+                                    </li>
+                                    <li class="controls__list__item">
+                                        <button class="controls__list__item__link" aria-label="Slide 3">
+                                            <i class="far fa-circle"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <div class="blog-list__post__text blog-list__post--wide__text">
+                            <h3 class="heading heading--secondary">
+                                <a href="#">
+                                    Post With Slider
+                                </a>
+                            </h3>
+                            <p class="blog-list__post__text__paragraph blog-list__post__text__paragraph--date">
+                                Dec 29, 2017
+                            </p>
+                            <p class="blog-list__post__text__paragraph">Rebum quis aute iure reprehenderit in voluptate velit esse cillum.</p>
+                            <ul class="social-links-list">
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--facebook">
+                                        <i class="fab fa-facebook-f fa-fw" title="Follow us on Facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--twitter">
+                                        <i class="fab fa-twitter fa-fw" title="Follow us on Twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="social-links-list__item">
+                                    <a href="#" class="social-links-list__item__link social-links-list__item__link--google">
+                                        <i class="fab fa-google-plus-g fa-fw" title="Follow us on Google Plus"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <button class="button button--primary button--wide button--centered">View all</button>
+            </div>
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="contact aside row row--outer row--highlight row--highlight--secondary">
+                <div class="wrapper">
+                    <dl class="contact-info">
+                        <dt class="contact-info__label visually-hidden">
+                            Telephone
+                        </dt>
+                        <dd class="contact-info__value contact-info__value--tel">
+                            <a class="contact-info__value--tel__link" href="tel:+91 544 567 8943">+91 544 567 8943</a>
+
+                        </dd>
+                        <dt class="contact-info__label visually-hidden">
+                            Email
+                        </dt>
+                        <dd class="contact-info__value contact-info__value--email">
+                            <a href="mailto:info@simpleflex.com" class="contact-info__value--email__link button button--primary button--primary--contrast button--large">
+                                info@simpleflex.com
+                            </a>
+                        </dd>
+                        <dt class="contact-info__label visually-hidden">
+                            Address
+                        </dt>
+                        <dd class="contact-info__value contact-info__value--address">
+                            8605 Santa Monica Blvd, Los Angeles, California 97845, US
+                        </dd>
+                    </dl>
+                </div>
+                
+            </div>
+            <!-- CONTACT MAP -->
+            <div class="contact__map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13217.102818940737!2d-118.3882128325663!3d34.0880768805961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bebb02602b33%3A0x60072fd68413ee3c!2s8605+Santa+Monica+Blvd%2C+West+Hollywood%2C+CA+90069%2C+USA!5e0!3m2!1sen!2sca!4v1524327935640"
+                    width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="contact row row--outer row--dark section--secondary">
+                <div class="wrapper">
+                    <h2 class="heading heading--primary">
+                        Get in touch
+                    </h2>
+                    <p class="paragraph--lead">Feel free to contact us at any time, nam liber tempor cum soluta nobis eleifend option congue nihil.
+                    </p>
+                    <ul class="social-links-list">
+                        <li class="social-links-list__item">
+                            <a href="#" class="social-links-list__item__link social-links-list__item__link--facebook">
+                                <i class="fab fa-facebook-f fa-fw" title="Follow us on Facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social-links-list__item">
+                            <a href="#" class="social-links-list__item__link social-links-list__item__link--twitter">
+                                <i class="fab fa-twitter fa-fw" title="Follow us on Twitter"></i>
+                            </a>
+                        </li>
+                        <li class="social-links-list__item">
+                            <a href="#" class="social-links-list__item__link social-links-list__item__link--flickr">
+                                <i class="fab fa-flickr fa-fw" title="Follow us on Flickr"></i>
+                            </a>
+                        </li>
+                        <li class="social-links-list__item">
+                            <a href="#" class="social-links-list__item__link social-links-list__item__link--google">
+                                <i class="fab fa-google-plus-g fa-fw" title="Follow us on Google Plus"></i> 
+                            </a>
+                        </li>
+                        <li class="social-links-list__item">
+                            <a href="#" class="social-links-list__item__link social-links-list__item__link--linked-in">
+                                <i class="fab fa-linkedin-in fa-fw" title="Follow us on LinkedIn"></i>
+                            </a>
+                        </li>
+                        <li class="social-links-list__item">
+                            <a href="#" class="social-links-list__item__link social-links-list__item__link--dribbble">
+                                <i class="fab fa-dribbble fa-fw" title="Follow us on Dribbble"></i>
+                            </a>
+                        </li>
+                        <li class="social-links-list__item">
+                            <a href="#" class="social-links-list__item__link social-links-list__item__link--pinterest">
+                                <i class="fab fa-pinterest-p fa-fw" title="Follow us on Pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- CONTACT FROM -->
+                    <form action="#" method="POST" class="form--contact form">
+                        <div class="form--contact__field">
+                            <label for="name" class="visually-hidden">Name</label>
+                            <input type="text" id="name" class="form--contact__input form__input" placeholder="Name" required>
+                        </div>
+                        <div class="form--contact__field">
+                            <label for="email" class="visually-hidden">Email</label>
+                            <input type="email" id="email" class="form--contact__input form__input" placeholder="Email" required>
+                        </div>
+                        <div class="form--contact__field">
+                            <label for="message" class="visually-hidden">Message</label>
+                            <textarea id="message" class="form--contact__input form__input form--contact__input--textarea form__input--textarea" placeholder="Message"
+                                required></textarea>
+                        </div>
+                        <div class="form--contact__field">
+                            <input type="submit" value="Send" class="button button--primary button--submit button--wide">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <aside class="aside main-footer__aside row row--outer section--secondary">
+            <div class="wrapper">
+                <ul class="widget-list">
+                    <li class="widget-list__item widget-list__item--1">
+                        <article class="widget-list__item__widget widget-list__item__widget-text">
+                            <h2 class="heading heading--secondary heading--secondary-dark">Text Widget</h2>
+                            <p class="paragraph widget-list__item__widget__paragraph">
+                                At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet. Nam liber tempor soluta nobis eleifend
+                                option congue nihil imperdiet doming id quod mazim placerat.
+                            </p>
+                        </article>
+
+                    </li>
+                    <li class="widget-list__item widget-list__item--2">
+                        <article class="widget-list__item__widget widget-list__item__widget-posts">
+                            <h2 class="heading heading--secondary heading--secondary-dark">Recent Posts</h2>
+                            <ul class="post-list">
+                                <li>
+                                    <article class="post-list__post">
+                                        <img class- "post-list__post__thumbnail" src="images/footer-1.png" alt="Wall covered in graffiti">
+                                        <div>
+                                            <h4 class="post-list__post__heading">
+                                                <a href="#" class="post-list__post__heading__link">
+                                                    At vero eos et accusam justo duo dolores.
+                                                </a>
+                                            </h4>
+                                            <p class="post-list__post__date">Dec 31, 2017</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="post-list__post">
+                                        <img class- "post-list__post__thumbnail" src="images/footer-2.png" alt="Wall covered in graffiti">
+                                        <div>
+                                            <h4 class="post-list__post__heading">
+                                                <a href="#" class="post-list__post__heading__link">
+                                                    Tempor invidunt ut labore et dolore.
+                                                </a>
+                                            </h4>
+                                            <p class="post-list__post__date">Dec 18, 2017</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="post-list__post">
+                                        <img class- "post-list__post__thumbnail" src="images/footer-3.png" alt="Wall covered in graffiti">
+                                        <div>
+                                            <h4 class="post-list__post__heading">
+                                                <a href="#" class="post-list__post__heading__link">
+                                                    Magna aliquyam erat, sed diam voluptua.
+                                                </a>
+                                            </h4>
+                                            <p class="post-list__post__date">Nov 29, 2017</p>
+                                        </div>
+                                    </article>
+                                </li>
+
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="widget-list__item widget-list__item--3">
+                        <article class="widget-list__item__widget widget-list__item__widget-subscribe">
+                            <h2 class="heading heading--secondary heading--secondary-dark">Our Newsletter</h2>
+                            <p class="paragraph widget-list__item__widget__paragraph">Please, subscribe to our latest news to be updated.</p>
+                            <form action="#" method="POST" class="form widget-list__item__widget-subscribe__form">
+                                <label for="subscribe" class="visually-hidden"></label>
+                                <input type="text" id="subscribe" name="subscribe" class="form__input--text widget-list__item__widget-subscribe__form__input"
+                                    required>
+                                <input type="submit" name="newsletterSubscribe" class="button button--secondary form-input--submit widget-list__item__widget-subscribe__form__input"
+                                    value="Send">
+
+                            </form>
+                        </article>
+                    </li>
+                    <li class="widget-list__item widget-list__item--4">
+                        <article class="widget-list__item__widget widget-list__item__widget-gallery">
+                            <h2 class="heading heading--secondary heading--secondary-dark">Flickr Widget</h2>
+                            <p class="paragraph widget-list__item__widget__paragraph">
+                                <a href="#">
+                                    <img src="images/footer-4.png" alt="Our latest posts on Flickr">
+                                </a>
+                            </p>
+                        </article>
+
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-footer__copyright">
+            <div class="wrapper">
+                <p class="main-footer__copyright__text">© Copyright 2018. Simpleflex Template by
+                    <a href="#">DX Templates</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

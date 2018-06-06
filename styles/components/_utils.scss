@@ -1,0 +1,123 @@
+$accent-border-width: 8px;
+$max-width: 1170px;
+$transition: all 0.5s ease;
+/* colors */
+
+$black: #242424;
+$dark-yellow: #f3c95e;
+$dark-green: #a3ca61;
+$dark-red: #f76c6c;
+$green: rgb(168, 209, 100);
+$light-black: #343434;
+$red: rgb(255, 111, 111);
+$white: #ffffff;
+$yellow: rgb(251, 207, 97);
+$heading-text-color-dark: $light-black;
+$heading-text-color-light: $white;
+$primary-text-color: #989898;
+/* Mixins */
+
+@mixin divotDown($color1, $color2) {
+    --top: 40px;
+    --side: 50px;
+    @media screen and (max-width: 800px) {
+        --top: 20px;
+        --side: 20px;
+    }
+    position: relative;
+    &::before,
+    &::after {
+        content: '';
+        margin-left: 0;
+        left: 50%;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        width: 0;
+        z-index: 10;
+    }
+    &::after {
+        border-top: solid var(--top) $color2;
+        border-right: solid var(--side) transparent;
+    }
+    &::before {
+        margin-left: calc(var(--side) * -1);
+        border-top: solid var(--top) $color1;
+        border-left: solid var(--side) transparent;
+    }
+}
+
+/* ^^ loosely adapted from https://css-tricks.com/examples/ShapesOfCSS/ */
+
+@mixin flexRowWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+@mixin highlightRow($color1, $color2) {
+    @include splitGradient($color1, $color2);
+    @include divotDown($color1, $color2);
+}
+
+@mixin fancyLinkUnderline($backgroundColor) {
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: -2px;
+        left: 0;
+        background-color: $backgroundColor;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: $transition;
+        -o-transition: $transition;
+        transition: $transition;
+    }
+    &:not(&--active):hover {
+        &::after {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+    }
+}
+
+/* adapted from: http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+
+@mixin splitGradient ($color1, $color2) {
+    background: -webkit-gradient(linear, left top, right top, from($color1), color-stop(50%, $color1), color-stop(50%, $color2), to($color2));
+    background: -webkit-linear-gradient(left, $color1, $color1 50%, $color2 50%, $color2);
+    background: -o-linear-gradient(left, $color1, $color1 50%, $color2 50%, $color2);
+    background: linear-gradient(to right, $color1, $color1 50%, $color2 50%, $color2);
+}
+
+@mixin unstyledList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+
+.wrapper {
+    left: 0;
+    margin: 0 auto;
+    max-width: $max-width;
+    position: relative;
+    -webkit-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+    @media screen and (max-width: 1169px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
